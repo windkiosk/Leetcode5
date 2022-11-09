@@ -1,4 +1,4 @@
-package daily_coding.circle_area;
+package daily_coding;
 
 import java.util.ArrayList;
 import java.util.List;
