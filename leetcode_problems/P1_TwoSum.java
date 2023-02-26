@@ -3,6 +3,7 @@ package leetcode_problems;
 import java.util.HashMap;
 import java.util.Map;
 
+// Two sum problem
 public class P1_TwoSum {
 
     public static void main(String[] args) {
