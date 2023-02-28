@@ -7,8 +7,8 @@ import java.util.Map;
 public class P1_TwoSum {
 
     public static void main(String[] args) {
-        int[] nums = new int[] { 2, 7, 11, 15 };
-        int[] ret = twoSum(nums, 9);
+        int[] numArray = new int[] { 2, 7, 11, 15 };
+        int[] ret = twoSum(numArray, 9);
         System.out.println("first: " + ret[0] + ", second: " + ret[1]);
     }
 
