@@ -27,10 +27,10 @@ public class MaximumNumberAchievable3 {
 
       int[] inDegree = new int[n];
       int pos = requests.length - 1;
-      for (int curr = mask; curr > 0; curr >>= 1, pos --) {
+      for (int curr = mask; curr > 0; curr >>= 1, pos--) {
         if ((curr & 1) == 1) {
-          inDegree[requests[pos][0]] --;
-          inDegree[requests[pos][1]] ++;
+          inDegree[requests[pos][0]]--;
+          inDegree[requests[pos][1]]++;
         }
       }
 
