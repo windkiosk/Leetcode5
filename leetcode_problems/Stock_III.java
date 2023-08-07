@@ -58,9 +58,9 @@ public class Stock_III {
       }
     }
 
-    int rightMax= prices[len - 1];
+    int rightMax = prices[len - 1];
     int[] rightProfit = new int[len + 1];
-    for (int i = len - 2; i >= 0; i --) {
+    for (int i = len - 2; i >= 0; i--) {
       if (prices[i] > rightMax) {
         rightMax = prices[i];
         rightProfit[i] = rightProfit[i + 1];
@@ -69,8 +69,8 @@ public class Stock_III {
       }
     }
 
-    for (int i = 1; i < len; i ++) {
-      maxProfit = Math.max(leftProfit[i] + rightProfit[i +1], maxProfit);
+    for (int i = 1; i < len; i++) {
+      maxProfit = Math.max(leftProfit[i] + rightProfit[i + 1], maxProfit);
     }
 
     return maxProfit;
