@@ -1,5 +1,6 @@
 package leetcode_problems;
 
+// https://leetcode.com/problems/ugly-number/
 public class UglyNumber {
 
   public static void main(String[] args) {
