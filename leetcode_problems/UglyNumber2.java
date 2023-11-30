@@ -1,9 +1,13 @@
 package leetcode_problems;
 
+import java.util.HashSet;
+import java.util.PriorityQueue;
+
 // https://leetcode.com/problems/ugly-number-ii/
 public class UglyNumber2 {
   public static void main(String[] args) {
     System.out.println(nthUglyNumber(10));
+    System.out.println(nthUglyNumberByHeap(10));
   }
 
   public static int nthUglyNumber(int n) {
@@ -36,5 +40,27 @@ public class UglyNumber2 {
     }
 
     return next_ugly_num;
+  }
+
+  static int nthUglyNumberByHeap(int n) {
+    HashSet<Long> seen = new HashSet();
+    PriorityQueue<Long> heap = new PriorityQueue<Long>();
+    seen.add(1L);
+    heap.add(1L);
+
+    long currUgly = 1L, newUgly;
+    int[] primes = new int[]{2, 3, 5};
+    for(int i = 1; i <= n; i++) {
+      currUgly = heap.poll();
+      for(int j : primes) {
+        newUgly = currUgly * j;
+        if (!seen.contains(newUgly)) {
+          seen.add(newUgly);
+          heap.add(newUgly);
+        }
+      }
+    }
+
+    return (int) currUgly;
   }
 }
