@@ -49,10 +49,10 @@ public class UglyNumber2 {
     heap.add(1L);
 
     long currUgly = 1L, newUgly;
-    int[] primes = new int[]{2, 3, 5};
-    for(int i = 1; i <= n; i++) {
+    int[] primes = new int[] {2, 3, 5};
+    for (int i = 1; i <= n; i++) {
       currUgly = heap.poll();
-      for(int j : primes) {
+      for (int j : primes) {
         newUgly = currUgly * j;
         if (!seen.contains(newUgly)) {
           seen.add(newUgly);
