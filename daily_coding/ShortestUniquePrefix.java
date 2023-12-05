@@ -16,7 +16,7 @@ public class ShortestUniquePrefix {
         if (curr.nodes[c] == null) {
           curr.nodes[c] = new TrieNode();
         }
-        curr.nodes[c].degree ++;
+        curr.nodes[c].degree++;
         curr = curr.nodes[c];
       }
     }
@@ -24,8 +24,9 @@ public class ShortestUniquePrefix {
     return root;
   }
 
-  public static void main(String[] args){
-    String[] ret = findShortestUniquePrefix(new String[]{"dog", "cat", "apple", "apricot", "fish"});
+  public static void main(String[] args) {
+    String[] ret =
+        findShortestUniquePrefix(new String[] {"dog", "cat", "apple", "apricot", "fish"});
     for (String s : ret) {
       System.out.println(s);
     }
@@ -35,7 +36,7 @@ public class ShortestUniquePrefix {
     TrieNode root = initTree(list);
 
     String[] ret = new String[list.length];
-    for (int i = 0; i < list.length; i ++) {
+    for (int i = 0; i < list.length; i++) {
       ret[i] = findPrefix(root, list[i]);
     }
     return ret;
