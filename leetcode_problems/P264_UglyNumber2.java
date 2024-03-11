@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.PriorityQueue;
 
 // https://leetcode.com/problems/ugly-number-ii/
-public class UglyNumber2 {
+public class P264_UglyNumber2 {
   public static void main(String[] args) {
     System.out.println(nthUglyNumber(10));
     System.out.println(nthUglyNumberByHeap(10));

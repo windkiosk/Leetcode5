@@ -1,7 +1,7 @@
 package leetcode_problems;
 
 // https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/
-public class MaximumNumberAchievable3 {
+public class P1601_MaximumNumberAchievable3 {
 
   static int maxRequests = 0;
 

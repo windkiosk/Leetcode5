@@ -1,7 +1,7 @@
 package leetcode_problems;
 
 // https://leetcode.com/problems/ugly-number/
-public class UglyNumber {
+public class P263_UglyNumber {
 
   public static void main(String[] args) {
     System.out.println(isUgly(36));

@@ -1,10 +1,7 @@
 package leetcode_problems;
 
-import java.util.HashMap;
-import java.util.Map;
-
 // https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/
-public class MaximumNumberAchievable2 {
+public class P1601_MaximumNumberAchievable2 {
 
   static int maxRequests = 0;
 

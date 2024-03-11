@@ -1,7 +1,7 @@
 package leetcode_problems;
 
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
-public class Stock_III {
+public class P123_Stock_III {
 
   public static void main(String[] args) {
     int[] p = new int[] {3, 3, 5, 0, 0, 3, 1, 4};
