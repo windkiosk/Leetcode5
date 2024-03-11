@@ -3,10 +3,10 @@ package leetcode_problems;
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class DecodeWays {
+public class P91_DecodeWays {
 
     public static void main(String[] args) {
-        DecodeWays decodeWays = new DecodeWays();
+        P91_DecodeWays decodeWays = new P91_DecodeWays();
         
         System.out.println(decodeWays.numDecodingsBfs("12"));
 
