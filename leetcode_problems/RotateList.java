@@ -6,12 +6,13 @@ import data.ListNode;
 public class RotateList {
 
 	public static void main(String[] args) {
-		data.ListNode node = ListNode.fromString("1->2->3->4->5");
+		ListNode node = ListNode.fromString("1->2->3->4->5");
 		RotateList rotateList = new RotateList();
-		rotateList.rotateRight(node, 2);
+		ListNode newNode  = rotateList.rotateRight(node, 2);
+		System.out.println(newNode.toString());
 	}
 
-	public data.ListNode rotateRight(ListNode head, int k) {
+	public ListNode rotateRight(ListNode head, int k) {
 		if (head == null) return head;
 
 		int len = 0;
@@ -32,7 +33,7 @@ public class RotateList {
 				slow = head;
 			}
 
-			if (i > k) {
+			if (i > k && slow != null) {
 				slow = slow.next;
 			}
 			if (curr.next == null) {
