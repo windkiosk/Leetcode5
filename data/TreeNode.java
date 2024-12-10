@@ -12,8 +12,8 @@ public class TreeNode {
   public TreeNode right;
 
   public static void main(String[] strings) {
-    TreeNodePrinter.printNode(SAMPLE_0);
-    TreeNodePrinter.printNode(SAMPLE_1);
+    data.TreeNodePrinter.printNode(SAMPLE_0);
+    data.TreeNodePrinter.printNode(SAMPLE_1);
   }
 
   public TreeNode(int x) {

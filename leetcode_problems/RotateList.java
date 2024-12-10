@@ -1,16 +1,16 @@
 package problems;
 
-import data.ListNode;
+
 
 public class RotateList {
 
 	public static void main(String[] args) {
-		ListNode node = ListNode.fromString("1->2->3->4->5");
+		data.ListNode node = ListNode.fromString("1->2->3->4->5");
 		RotateList rotateList = new RotateList();
 		rotateList.rotateRight(node, 2);
 	}
 
-	public ListNode rotateRight(ListNode head, int k) {
+	public data.ListNode rotateRight(ListNode head, int k) {
 		if (head == null) return head;
 
 		int len = 0;

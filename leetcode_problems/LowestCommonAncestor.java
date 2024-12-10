@@ -1,4 +1,4 @@
-package problems;
+package leetcode_problems;
 
 import data.TreeNode;
 import data.TreeNodePrinter;
