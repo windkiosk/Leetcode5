@@ -1,6 +1,7 @@
-package problems;
+package leetcode_problems;
 
 
+import data.ListNode;
 
 public class RotateList {
 

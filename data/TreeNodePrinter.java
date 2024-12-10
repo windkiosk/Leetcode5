@@ -1,5 +1,6 @@
 package data;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -27,7 +28,7 @@ public class TreeNodePrinter {
 
     TreeNodePrinter.printWhitespaces(firstSpaces);
 
-    List<TreeNode> newNodes = new ArrayList<TreeNode>();
+    List<TreeNode> newNodes = new ArrayList<>();
     for (TreeNode node : nodes) {
       if (node != null) {
         System.out.print(node.val);
