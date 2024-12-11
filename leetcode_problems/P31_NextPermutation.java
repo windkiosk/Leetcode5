@@ -3,7 +3,7 @@ package leetcode_problems;
 public class P31_NextPermutation {
 
     public static void main(String[] args) {
-        int[] a = new int[] { 2, 2, 1, 3 };
+        int[] a = new int[]{2, 2, 1, 3};
         nextPermutation(a);
 
         for (int i : a) {

@@ -7,7 +7,7 @@ public class P91_DecodeWays {
 
     public static void main(String[] args) {
         P91_DecodeWays decodeWays = new P91_DecodeWays();
-        
+
         System.out.println(decodeWays.numDecodingsBfs("12"));
 
         System.out.println(decodeWays.numDecodingsBfs("226"));
@@ -22,13 +22,13 @@ public class P91_DecodeWays {
         startPos.add(0);
         int len = s.length();
         int ret = 0;
-        while(!startPos.isEmpty()) {
+        while (!startPos.isEmpty()) {
             int start = startPos.poll();
             if (start == len) {
-                ret ++;
+                ret++;
                 continue;
             } else {
-                for (int end = start + 1; end <= len && end - start < 3; end ++) {
+                for (int end = start + 1; end <= len && end - start < 3; end++) {
                     String numString = s.subSequence(start, end).toString();
                     int v = Integer.valueOf(numString);
                     if (v < 1 || v > 26) {

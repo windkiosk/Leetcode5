@@ -68,11 +68,7 @@ public class P289_GameOfLife {
 
         if (c < 2) {
             return true;
-        } else if (c > 3) {
-            return true;
-        } else {
-            return false;
-        }
+        } else return c > 3;
     }
 
     boolean checkDeadCell(int x, int y, int[][] board) {
@@ -115,15 +111,12 @@ public class P289_GameOfLife {
 
     boolean isAlive(int x, int y, int[][] board) {
         if (isLegal(x, y, board)) {
-            if (board[y][x] % 10 == 1) {
-                return true;
-            }
+            return board[y][x] % 10 == 1;
         }
         return false;
     }
 
     boolean isLegal(int x, int y, int[][] board) {
-        if (x < 0 || y < 0 || x >= board[0].length || y >= board.length) return false;
-        return true;
+        return x >= 0 && y >= 0 && x < board[0].length && y < board.length;
     }
 }

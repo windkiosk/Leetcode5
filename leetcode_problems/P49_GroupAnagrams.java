@@ -2,13 +2,13 @@ import java.util.*;
 
 public class P49_GroupAnagrams {
     public static void main(String[] args) {
-        String[] ss = new String[]{"eat","tea","tan","ate","nat","bat"};
+        String[] ss = new String[]{"eat", "tea", "tan", "ate", "nat", "bat"};
         List<List<String>> lists = groupAnagrams(ss);
     }
 
     public static List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> ret = new LinkedList<>();
-        if(strs == null || strs.length == 0) return ret;
+        if (strs == null || strs.length == 0) return ret;
         Map<String, List<String>> map = new HashMap<>();
 
         for (String s : strs) {
