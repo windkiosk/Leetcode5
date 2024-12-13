@@ -8,7 +8,8 @@ public class P19_RemoveNFromEnd {
         if (n == 0) return head;
 
         // create dummy head for case that n == list.length
-        ListNode ff = new ListNode(0, head);
+        ListNode ff = new ListNode(0);
+        ff.next = head;
 
         ListNode curr = ff;
         // move first arrow n times firstly;
