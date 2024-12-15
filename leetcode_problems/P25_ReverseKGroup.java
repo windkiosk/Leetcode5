@@ -10,7 +10,7 @@ public class P25_ReverseKGroup {
         ListNode lastTail = ff;
         ListNode curr = ff;
 
-        while (curr != null) {
+        while (true) {
             boolean hasK = true;
             // move curr k times
             for (int i = 0; i < k; i++) {
