@@ -8,8 +8,6 @@ public class P188_Stock_IV {
 
         int[] profit = new int[k + 1];
         int[] cost = new int[k + 1];
-
-        profit[0] = 0;
         Arrays.fill(cost, Integer.MAX_VALUE);
 
         for (int price : prices) {
