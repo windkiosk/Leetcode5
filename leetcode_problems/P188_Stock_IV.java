@@ -3,6 +3,13 @@ package leetcode_problems;
 import java.util.Arrays;
 
 public class P188_Stock_IV {
+
+    public static void main(String[] args) {
+        int[] p = new int[]{1, 2, 3, 0, 5, 6};
+        P188_Stock_IV p188StockIv = new P188_Stock_IV();
+        System.out.println(p188StockIv.maxProfit(3, p));
+    }
+
     public int maxProfit(int k, int[] prices) {
         if (k == 0) return 0;
 
